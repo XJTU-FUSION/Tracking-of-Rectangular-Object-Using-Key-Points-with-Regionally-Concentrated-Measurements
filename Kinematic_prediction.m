@@ -2,7 +2,7 @@ function [X_pre,P_pre] = Kinematic_prediction(X_update,P_update,T)
 %% Implementation of the Key-Point-Based Extended Object Tracking Approach (KPA) with Regionally Concentrated Measurements 
 % reference:
 % "Tracking of Rectangular Object Using Key Points with Regionally Concentrated Measurements" 
-% (IEEE Transactions on Intelligent Transportation Systems) by Xiaomeng Cao, Jian Lan, Yushuang Liu, Boyi Tan, 2023.
+% (IEEE Transactions on Intelligent Transportation Systems) by Xiaomeng Cao, Jian Lan*, Yushuang Liu, Boyi Tan, 2023.
 % Copyright by Xiaomeng Cao, Shaanxi University of Science & Technology; Jian Lan, Xi'an Jiaotong University
 % Email:  xmcao911@163.com; lanjian@mail.xjtu.edu.cn
 
