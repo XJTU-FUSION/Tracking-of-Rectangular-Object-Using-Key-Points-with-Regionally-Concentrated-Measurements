@@ -1,8 +1,8 @@
 function d=HDISTANCE(X,Y)
 % gives the Hausdorff distance between 2 finite sets X and Y,
 % X, Y are arrays of column vectors
-m=size(X,2);                                                               %X的列数
-n=size(Y,2);                                                               %Y的列数
+m=size(X,2);                                                               
+n=size(Y,2);                                                               
 if m==1 && n==1
     d=norm(X-Y);
 else
