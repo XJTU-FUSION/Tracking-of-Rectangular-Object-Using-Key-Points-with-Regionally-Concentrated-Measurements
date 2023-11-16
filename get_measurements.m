@@ -2,7 +2,7 @@ function [meas_all] = get_measurements(gt_state,gt_orientation,gt_length,gt_widt
 %% Implementation of the Key-Point-Based Extended Object Tracking Approach (KPA) with Regionally Concentrated Measurements  
 % reference:
 % "Tracking of Rectangular Object Using Key Points with Regionally Concentrated Measurements" 
-% (IEEE Transactions on Intelligent Transportation Systems) by Xiaomeng Cao, Jian Lan, Yushuang Liu, Boyi Tan, 2023.
+% (IEEE Transactions on Intelligent Transportation Systems) by Xiaomeng Cao, Jian Lan*, Yushuang Liu, Boyi Tan, 2023.
 % Copyright by Xiaomeng Cao, Shaanxi University of Science & Technology; Jian Lan, Xi'an Jiaotong University
 % Email:  xmcao911@163.com; lanjian@mail.xjtu.edu.cn
 
@@ -37,7 +37,7 @@ for k = 1:1:steps-1
     P2 = [gt_length/2;-gt_width/2];                                                                       
     P3 = [-gt_length/2;gt_width/2];                                                                           
     P4 = [gt_length/2;gt_width/2];  
-    key_point = (0.5-k1)*(P3-P1)+(0.5-k2)*(P1-P2);   % the ground truth of the key point in the target¡¯s body coordinate system 
+    key_point = (0.5-k1)*(P3-P1)+(0.5-k2)*(P1-P2);   % the ground truth of the key point in the targetÂ¡Â¯s body coordinate system 
 
     %%% the four vertexes of the region 1
     A1 = key_point;                                                        
