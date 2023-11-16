@@ -104,9 +104,3 @@ h1 = plot(time,hausdoff_distance(time),'k','LineWidth',2);
 xlabel('Time step k');
 ylabel('Hausdoff distance');
 title('Averaged estimation result in the Hausdorff distance');
-
-
-
-
-
-
